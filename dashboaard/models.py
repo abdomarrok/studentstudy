@@ -11,9 +11,9 @@ class Notes(models.Model):
     def __str__(self):
         return self.title
 
-    class Meta:
-        verbose_name = "notes"
-        verbose_name_plural = "notes"
+  #  class Meta:
+       # verbose_name = "notes"
+       # verbose_name_plural = "notes"
 
 class Homework(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
